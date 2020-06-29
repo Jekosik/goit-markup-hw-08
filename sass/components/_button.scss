@@ -1,0 +1,23 @@
+.button.primary {
+  @extend %button;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+.button.secondary {
+  @extend %button;
+  display: inline-flex;
+  align-self: flex-end;
+  height: 50px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  padding: 10px 29px;
+}

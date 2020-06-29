@@ -1,0 +1,21 @@
+%button {
+  color: $white-color;
+  background: $accent-color;
+
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  min-width: 200px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+%commands-case {
+  display: flex;
+  height: 44px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,37 @@
+.section .scroll {
+  display: flex;
+}
+
+.scroll .works {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.works-box {
+  position: relative;
+}
+
+.title-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  cursor: pointer;
+}
+
+.scroll .title {
+  margin-top: 27px;
+  font-weight: 700;
+  font-size: $font-s;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-color;
+}

@@ -1,0 +1,33 @@
+.logo {
+  font-family: $font-f;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  outline: none;
+
+  margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.wite {
+  color: $white-color;
+}
+.back {
+  color: $title-text-color;
+  font-family: Raleway;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

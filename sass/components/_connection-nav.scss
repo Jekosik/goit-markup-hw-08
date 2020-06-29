@@ -1,0 +1,44 @@
+.connection-nav {
+  display: flex;
+  align-items: center;
+
+  & li {
+    margin-right: 50px;
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+.connection-nav .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  outline: none;
+  transition: color $transition-duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-contact {
+  fill: $primary-text-color;
+  margin-right: 10px;
+
+  transition: fill $transition-duration $cubic;
+
+  .link:hover &,
+  .link:focus & {
+    fill: $accent-color;
+  }
+}
