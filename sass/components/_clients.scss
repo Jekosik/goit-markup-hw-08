@@ -14,7 +14,14 @@
 }
 
 .clients-compani {
-  position: relative;
+  transition: border $transition-duration $cubic;
+
+  display: block;
+  content: '';
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   margin: 15px;
   width: calc((100% - 2 * 30px) / 2);
 
@@ -48,38 +55,6 @@
   justify-content: center;
   outline: none;
   transition: fill $transition-duration $cubic;
-
-  &::before {
-    position: absolute;
-    transition: border $transition-duration $cubic;
-
-    display: block;
-    content: '';
-    height: 90px;
-
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-
-    @media screen and (max-width: 767px) {
-      width: calc(100% - 30px);
-    }
-    @media screen and (min-width: $tablet) {
-      width: 226px;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 170px;
-    }
-  }
-
-  // @media screen and (max-width: 767px) {
-  //   width: 50%;
-  // }
-  @media screen and (min-width: $tablet) {
-    width: 226px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 170px;
-  }
 }
 
 .clients-compani:hover ::before {
