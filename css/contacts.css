@@ -113,6 +113,11 @@ body {
   }
 }
 
+.menu-button:hover > .icon-menu,
+.menu-button :focus > .icon-menu {
+  color: #2196f3;
+}
+
 .menu-button .icon-close {
   display: none;
 }

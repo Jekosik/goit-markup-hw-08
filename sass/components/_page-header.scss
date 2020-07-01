@@ -39,6 +39,11 @@
     display: none;
   }
 
+  &:hover > .icon-menu,
+  :focus > .icon-menu {
+    color: $accent-color;
+  }
+
   & .icon-close {
     display: none;
   }
