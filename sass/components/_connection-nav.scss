@@ -18,6 +18,11 @@
   }
 }
 
+.contact-case {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
 .connection-nav .link {
   color: $primary-text-color;
 
@@ -27,6 +32,12 @@
   text-decoration: none;
   outline: none;
   transition: color $transition-duration $cubic;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 
   &:hover,
   &:focus {
