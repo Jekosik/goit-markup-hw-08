@@ -1,7 +1,16 @@
 .button-case {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+}
+
+.button-box:not(:last-child) {
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
 }
 
 .portfolio {
@@ -17,6 +26,14 @@
   border: transparent;
   outline: none;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 
   transition: background $transition-duration $cubic,
     color $transition-duration $cubic;
