@@ -1,12 +1,12 @@
 .site-nav {
   display: flex;
-  align-items: center;
+  @media screen and (min-width: $mobile) {
+    display: inline-block;
+    padding: 60px 0px;
+  }
 
   & .item + .item {
     margin-left: 50px;
-  }
-  @media screen and (max-width: 767px) {
-    display: none;
   }
 }
 
@@ -26,6 +26,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  @media screen and (min-width: $mobile) {
+    margin-right: 0px;
+    font-size: 18px;
+    line-height: 1.17;
+    padding-bottom: 8px;
+    padding-top: 40px;
+  }
 
   &.link:hover,
   &.link:focus {
