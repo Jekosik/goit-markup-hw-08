@@ -1,22 +1,39 @@
 .section.features {
-  padding-bottom: 0px;
-}
-
-.feat {
-  padding-bottom: 94px;
-  border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0px;
+  }
 }
 
 .features {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $tablet) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .features li {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
 
-  &:nth-child(4n) {
-    margin-right: 0px;
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -28,6 +45,10 @@
   background: $fill-silver;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .features .title {
@@ -39,6 +60,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features .text {
@@ -49,4 +74,8 @@
   font-size: $font-s;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 30px;
+  // }
 }

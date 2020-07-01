@@ -3,18 +3,46 @@ footer {
 }
 
 .endbox {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.end {
+  @media screen and (min-width: $tablet) {
+    display: inline-grid;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 76px;
+  }
 }
 
 .logotipe {
-  padding-top: 45px;
-  margin-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 45px;
+    margin-bottom: 8px;
+  }
 }
 
 .logo.footer {
   margin: 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
 }
 
 .address {
@@ -25,6 +53,9 @@ footer {
   font-size: $font-s;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
 }
 
 .contacts-address .link {
@@ -36,6 +67,16 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts-address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .developed {
@@ -48,6 +89,11 @@ footer {
   line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .finish {
@@ -59,6 +105,10 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: block;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 .finish input {
@@ -82,6 +132,11 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: $footer-text-color;
   background-color: unset;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .icon-send {
@@ -92,6 +147,7 @@ footer {
 
 .finish-social {
   display: flex;
+  justify-content: center;
 }
 
 .finish-social li + li {
@@ -131,11 +187,27 @@ footer {
 }
 
 .finishbox {
-  display: flex;
-  margin-left: 94px;
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 166px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 94px;
+  }
 }
 
 .invitation {
-  padding-top: 56px;
-  margin-left: 69px;
+  @media screen and (min-width: $tablet) {
+    display: inline-grid;
+    text-align: center;
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 56px;
+    margin-left: 69px;
+  }
 }

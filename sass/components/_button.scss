@@ -20,4 +20,7 @@
   letter-spacing: 0.06em;
 
   padding: 10px 29px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }

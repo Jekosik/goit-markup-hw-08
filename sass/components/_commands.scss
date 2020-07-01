@@ -1,34 +1,65 @@
 .people {
   padding-top: 94px;
   margin-bottom: 50px;
+  display: block;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .section-team {
   background-color: $fill-silver;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .commands {
-  margin-bottom: 94px;
   background: $white-color;
   border-radius: 4px;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 94px;
+  }
 }
 
 .commands > .foto {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .team {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   & .commands {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+    }
 
-    &:nth-child(4n) {
-      margin-right: 0px;
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 90px) / 4);
+      margin-right: 30px;
+
+      &:nth-child(4n) {
+        margin-right: 0px;
+      }
     }
   }
 }
@@ -48,6 +79,10 @@
   line-height: 1.35;
   text-align: center;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    line-height: 1.19;
+  }
 }
 
 .team .profession {
@@ -61,6 +96,9 @@
   line-height: 1.35;
   text-align: center;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    line-height: 1.19;
+  }
 }
 
 .social {
@@ -76,13 +114,6 @@
     }
   }
 }
-
-// .commands-case {
-//   display: flex;
-//   height: 44px;
-//   border-radius: 50%;
-//   margin-bottom: 24px;
-// }
 
 .commands-link {
   @extend %commands-case;

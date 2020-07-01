@@ -4,7 +4,17 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  width: 1200px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .main-nav {
@@ -14,4 +24,24 @@
 .page-header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
 }

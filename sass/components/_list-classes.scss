@@ -1,5 +1,15 @@
+.occupation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .section .scroll {
   display: flex;
+}
+
+.occupations {
+  padding-top: 94px;
+  border-top: 1px solid #ececec;
 }
 
 .scroll .works {
