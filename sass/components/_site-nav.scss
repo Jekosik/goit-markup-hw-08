@@ -6,7 +6,9 @@
   }
 
   & .item + .item {
-    margin-left: 50px;
+    @media screen and (min-width: $tablet) {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -27,6 +29,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   @media screen and (max-width: 767px) {
+    display: block;
     font-size: 18px;
     line-height: 1.17;
     padding-bottom: 8px;

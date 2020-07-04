@@ -251,8 +251,10 @@ img {
   }
 }
 
-.site-nav .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav .item + .item {
+    margin-left: 50px;
+  }
 }
 
 .item {
@@ -277,6 +279,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .site-nav .link {
+    display: block;
     font-size: 18px;
     line-height: 1.17;
     padding-bottom: 8px;
