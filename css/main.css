@@ -909,9 +909,6 @@ img {
 .clients-compani {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
-  content: '';
-  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   margin: 15px;
@@ -941,7 +938,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover .clients-icon {
+.clients-compani .clients-link:hover > .clients-icon,
+.clients-compani .clients-link:focus > .clients-icon {
   fill: #2196f3;
 }
 
@@ -960,8 +958,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-compani:hover ::before {
+.clients-compani .clients-link:hover,
+.clients-compani .clients-link:focus {
   border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 footer {
