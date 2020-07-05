@@ -148,9 +148,9 @@
               <div class="works-box">
                 <a href="">
                   <img
-                    src="./images/img1.jpg"
+                    srcset="./images/fut1-370@2x.jpg 2x"
+                    src="./images/fut1-370.jpg"
                     width="370"
-                    height="294"
                     alt="картинка"
                 /></a>
                 <div class="title-text">
@@ -162,7 +162,8 @@
               <div class="works-box">
                 <a href=""
                   ><img
-                    src="./images/img2.jpg"
+                  srcset="./images/fut2-370@2x.jpg 2x"
+                    src="./images/fut2-370.jpg"
                     width="370"
                     height="294"
                     alt="картинка"
@@ -176,7 +177,8 @@
               <div class="works-box">
                 <a href=""
                   ><img
-                    src="./images/img3.jpg"
+                  srcset="./images/fut3-370@2x.jpg 2x"
+                    src="./images/fut3-370.jpg"
                     width="370"
                     height="294"
                     alt="картинка"
@@ -196,13 +198,21 @@
           <h2 class="section-title people">Наша команда</h2>
           <ul class="team">
             <li class="commands">
-              <img
-                class="foto"
-                src="./images/foto.jpg"
-                width="270"
-                height="260"
-                alt="фото"
-              />
+               <picture>
+                <source srcset="
+                    ./images/foto1-450.jpg    1x,
+                    ./images/foto1-450@2x.jpg 2x,
+                  " media="(max-width: 767px)" />
+                <source srcset="
+                    ./images/foto1-270.jpg    1x,
+                    ./images/foto1-270@2x.jpg 2x,
+                  " media="(min-width: 1200px)" />
+                <source srcset="
+                    ./images/foto1-354.jpg    1x,
+                    ./images/foto1-354@2x.jpg 2x,
+                  " media="(min-width: 768px)" />
+                <img class="foto" src="./images/foto1-450.jpg" alt="фото"/>
+               </picture>
               <h3 class="title">John Smith</h3>
               <p class="profession">Product Designer</p>
               <ul class="social">
@@ -237,13 +247,21 @@
               </ul>
             </li>
             <li class="commands">
-              <img
-                class="foto"
-                src="./images/foto2.jpg"
-                width="270"
-                height="260"
-                alt="фото"
-              />
+              <picture>
+                <source srcset="
+                    ./images/foto2-450.jpg    1x,
+                    ./images/foto2-450@2x.jpg 2x,
+                  " media="(max-width: 767px)" />
+                <source srcset="
+                    ./images/foto2-270.jpg    1x,
+                    ./images/foto2-270@2x.jpg 2x,
+                  " media="(min-width: 1200px)" />
+                <source srcset="
+                    ./images/foto2-354.jpg    1x,
+                    ./images/foto2-354@2x.jpg 2x,
+                  " media="(min-width: 768px)" />
+                <img class="foto" src="./images/foto2-450.jpg" alt="фото" />
+              </picture>
               <h3 class="title">Marta Stewart</h3>
               <p class="profession">Frontend Developer</p>
               <ul class="social">
@@ -278,13 +296,21 @@
               </ul>
             </li>
             <li class="commands">
-              <img
-                class="foto"
-                src="./images/foto3.jpg"
-                width="270"
-                height="260"
-                alt="фото"
-              />
+            <picture>
+              <source srcset="
+                  ./images/foto3-450.jpg    1x,
+                  ./images/foto3-450@2x.jpg 2x,
+                " media="(max-width: 767px)" />
+              <source srcset="
+                  ./images/foto3-270.jpg    1x,
+                  ./images/foto3-270@2x.jpg 2x,
+                " media="(min-width: 1200px)" />
+              <source srcset="
+                  ./images/foto3-354.jpg    1x,
+                  ./images/foto3-354@2x.jpg 2x,
+                 " media="(min-width: 768px)" />
+              <img class="foto" src="./images/foto3-450.jpg" alt="фото" />
+            </picture>
               <h3 class="title">Robert Jakis</h3>
               <p class="profession">Marketing</p>
               <ul class="social">
@@ -319,13 +345,21 @@
               </ul>
             </li>
             <li class="commands">
-              <img
-                class="foto"
-                src="./images/foto4.jpg"
-                width="270"
-                height="260"
-                alt="фото"
-              />
+              <picture>
+                <source srcset="
+                  ./images/foto4-450.jpg    1x,
+                  ./images/foto4-450@2x.jpg 2x,
+                  " media="(max-width: 767px)" />
+                <source srcset="
+                  ./images/foto4-270.jpg    1x,
+                  ./images/foto4-270@2x.jpg 2x,
+                  " media="(min-width: 1200px)" />
+                <source srcset="
+                  ./images/foto4-354.jpg    1x,
+                  ./images/foto4-354@2x.jpg 2x,
+                  " media="(min-width: 768px)" />
+                <img class="foto" src="./images/foto4-450.jpg" alt="фото" />
+              </picture>
               <h3 class="title">Martin Doe</h3>
               <p class="profession">UI Designer</p>
               <ul class="social">
