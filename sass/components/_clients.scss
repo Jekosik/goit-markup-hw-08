@@ -53,8 +53,7 @@
   transition: fill $transition-duration $cubic;
 }
 
-.clients-compani .clients-link:hover,
-.clients-compani .clients-link:focus {
+.clients-compani:hover,
+.clients-compani:focus {
   border: 1px solid $accent-color;
-  border-radius: 4px;
 }
