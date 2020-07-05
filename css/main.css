@@ -456,7 +456,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1600px;
   max-width: 480px;
   height: 400px;
   margin-left: auto;
